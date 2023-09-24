@@ -141,8 +141,8 @@ cd $LOCAL_REPO_DIR
 rm -rf recipes/example recipes/spyrmsd
 ```
 
-Then in the `.circleci/build_steps.sh` file, comment out the line that starts `git ls-tree --name-only master -- .`.
+Then in the `.scripts/build_steps.sh` file, comment out the line that starts `git ls-tree --name-only master -- .`.
 
-Then you should be able to run `./.circleci/run_docker_build.sh`. You'll probably see some errors which you'll need to fix.
+Then you should be able to run `./.scripts/run_docker_build.sh`. You'll probably see some errors which you'll need to fix.
 
 Once these errors are sorted out, you can push your recipe to GitHub and create a PR. Make sure to name the PR something memorable, e.g., `Adding linearmodels recipe`.
